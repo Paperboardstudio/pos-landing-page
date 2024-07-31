@@ -2,7 +2,7 @@ import imgPlaceholder from "../assets/imgPlaceholder.png";
 
 function Nav() {
   return (
-    <div className="grid grid-cols-2 shadow-md pb-4 px-4 ">
+    <div className="grid grid-cols-2 shadow-md pb-4 px-4  w-2/2 my-0">
       <div className="left-side">
         <img src={imgPlaceholder} className="w-10"></img>
       </div>
