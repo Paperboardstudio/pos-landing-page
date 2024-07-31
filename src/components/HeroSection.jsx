@@ -7,7 +7,7 @@ function HeroSection() {
         Revoluciona el control de tu negocio
       </h1>
       <h2 className="text-xl sm:w-2/5 mb-6">
-        Operaciones optimizadas, transacciones flidas y analisis en tiempo real
+        Operaciones optimizadas, transacciones fluidas y análisis en tiempo real
       </h2>
       <button className="bg-slate-700 text-slate-100 rounded p-1 hover:text-yellow-400 hover:cursor-pointer active:text-yellow-700 transition duration-150 ease-in-out">
         Empecemos
