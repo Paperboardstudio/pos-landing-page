@@ -1,6 +1,7 @@
 import "./App.css";
 import Characteristics from "./components/Characteristics";
 import HeroSection from "./components/HeroSection";
+import LastSubscribeSection from "./components/LastSubscribeSection";
 import Nav from "./components/Nav";
 import PriceSection from "./components/PriceSection";
 import Reviews from "./components/Reviews";
@@ -14,6 +15,7 @@ function App() {
         <Characteristics />
         <PriceSection />
         <Reviews />
+        <LastSubscribeSection />
       </div>
     </>
   );
