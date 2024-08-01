@@ -5,6 +5,7 @@ import LastSubscribeSection from "./components/LastSubscribeSection";
 import Nav from "./components/Nav";
 import PriceSection from "./components/PriceSection";
 import Reviews from "./components/Reviews";
+import Social from "./components/Social";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <PriceSection />
         <Reviews />
         <LastSubscribeSection />
+        <Social />
       </div>
     </>
   );

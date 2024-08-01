@@ -9,7 +9,7 @@ function HeroSection() {
       <h2 className="text-xl sm:w-3/5 mb-6">
         Operaciones optimizadas, transacciones fluidas y análisis en tiempo real
       </h2>
-      <button className="bg-slate-700 text-slate-100 rounded p-1 hover:text-yellow-400 hover:cursor-pointer active:text-yellow-700 transition duration-150 ease-in-out">
+      <button className="bg-slate-700 rounded p-1 text-slate-200 justify-center align-middle hover:text-slate-50 hover:bg-slate-900 hover:cursor-pointer active:text-white transition duration-150 ease-in-out hover:scale-105 active:scale-110">
         Empecemos
       </button>
       <div className="grid grid-cols-2 gap-10 mt-20">

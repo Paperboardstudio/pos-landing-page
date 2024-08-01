@@ -21,7 +21,7 @@ function Nav() {
             Comunidad
           </li>
           <li className="flex ">
-            <button className="bg-slate-800 rounded p-1 text-white justify-center align-middle hover:text-yellow-400 hover:cursor-pointer active:text-yellow-700 transition duration-150 ease-in-out">
+            <button className="bg-slate-700 rounded p-1 text-slate-200 justify-center align-middle hover:text-slate-50 hover:bg-slate-900 hover:cursor-pointer active:text-white transition duration-150 ease-in-out hover:scale-105 active:scale-110">
               Empecemos
             </button>
           </li>
