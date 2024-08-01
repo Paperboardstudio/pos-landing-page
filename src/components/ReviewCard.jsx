@@ -17,7 +17,7 @@ function ReviewCard({ title, review, user, date, profilePic }) {
   );
 
   return (
-    <div className=" border border-slate-200 p-6">
+    <div className=" border border-slate-200 p-6 ">
       <div className="flex mb-4">
         {svg}
         {svg}

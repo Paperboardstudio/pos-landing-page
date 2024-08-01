@@ -2,7 +2,7 @@ import ReviewCard from "./ReviewCard";
 
 function Reviews() {
   return (
-    <div className="flex gap-12">
+    <div className="flex sm:gap-12 gap-2 mt-12 justify-center">
       <ReviewCard
         title="Excelente sistema"
         review="Este POS ha mejorado significativamente la eficiencia de nuestro restaurante. Muy fácil de usar y con un soporte técnico excelente."
