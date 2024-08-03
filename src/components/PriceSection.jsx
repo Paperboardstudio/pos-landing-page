@@ -11,7 +11,10 @@ function PriceSection() {
   }
 
   return (
-    <div className="w-full mt-16 flex justify-center flex-col items-center self-center content-center">
+    <div
+      id="price"
+      className="w-full mt-16 flex justify-center flex-col items-center self-center content-center"
+    >
       <div className="w-full ">
         <div className="flex gap-6 justify-center mb-12">
           <button
