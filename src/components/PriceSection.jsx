@@ -58,7 +58,7 @@ function PriceSection() {
           <div className="flex gap-8 justify-center">
             <PriceCard
               title="Basico Anual"
-              price="$xx"
+              price="$20"
               list={[
                 "Gestión básica de inventarios",
                 "Reporte de ventas diarios",
@@ -69,7 +69,7 @@ function PriceSection() {
             />
             <PriceCard
               title="Pro Anual"
-              price="$xx"
+              price="$65"
               list={[
                 "Todas las características del Plan Básico",
                 "Reportes de ventas avanzados",

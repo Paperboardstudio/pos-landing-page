@@ -1,12 +1,13 @@
 import imgPlaceholder from "../assets/imgPlaceholder.png";
+import logo1 from "../assets/claritapplogo_black.png";
 
 function Nav() {
   return (
     <div className="grid grid-cols-2 shadow-md pb-4 sm:px-4  w-full my-0 text-xs sm:text-base">
       <div className="left-side flex items-center">
         <img
-          src={imgPlaceholder}
-          className="sm:w-10 w-4 flex align-middle justify-center"
+          src={logo1}
+          className="sm:w-14 w-10  flex align-middle justify-center"
         ></img>
       </div>
       <div className="right-side flex justify-end text-xs">
