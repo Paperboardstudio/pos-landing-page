@@ -61,8 +61,9 @@ function PriceSection() {
           <div className="flex gap-8 justify-center">
             <PriceCard
               title="Basico Anual"
-              price="$20"
+              price="$19"
               list={[
+                "Facturado una vez al año",
                 "Gestión básica de inventarios",
                 "Reporte de ventas diarios",
                 "Soporte técnico estándar",
@@ -72,8 +73,9 @@ function PriceSection() {
             />
             <PriceCard
               title="Pro Anual"
-              price="$65"
+              price="$59"
               list={[
+                "Facturado una vez al año",
                 "Todas las características del Plan Básico",
                 "Reportes de ventas avanzados",
                 "Soporte técnico prioritario",
