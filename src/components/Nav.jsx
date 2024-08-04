@@ -11,14 +11,14 @@ function Nav() {
       <div className="left-side flex items-center">
         <img
           src={logo1}
-          className="sm:w-14 w-10  flex align-middle justify-center"
+          className="sm:w-20 w-10  flex align-middle justify-center"
         ></img>
       </div>
-      <div className="right-side flex justify-end text-xs">
+      <div className="right-side flex justify-end text-xs sm:text-base">
         <ul className="flex sm:gap-4 gap-1 items-center">
           <li
             onClick={() => locate("characteristics")}
-            className="hover:text-orange-500 hover:cursor-pointer active:text-orange-700 transition duration-150 ease-in-out"
+            className=" hover:text-orange-500 hover:cursor-pointer active:text-orange-700 transition duration-150 ease-in-out"
           >
             Soluciones
           </li>

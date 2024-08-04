@@ -1,0 +1,13 @@
+#bgImg {
+  background-image: url("bannerclarita.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section .content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}

@@ -1,8 +1,12 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: 100vw;
+  margin: 2 auto;
   padding: 1rem;
   text-align: center;
+}
+/* 
+#bgImg {
+  backgroundimage: "bannerclarita.jpg";
 }
 
 .logo {
@@ -39,4 +43,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
