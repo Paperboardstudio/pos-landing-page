@@ -2,7 +2,7 @@ function PriceCard({ title, price, list }) {
   // const [isMonthly, setIsMonthly] = useState(true);
   console.log("Rendering PriceCard with title:", title, price, list);
   return (
-    <div className="border border-slate-300 sm:p-8 p-2 sm:pr-20 mb-4">
+    <div className="border border-slate-300 sm:p-8 p-2 sm:pr-20 mb-4 flex flex-col h-full items-center">
       <p className="font-medium sm:text-base text-sm">{title}</p>
       <div className="flex text-center items-center justify-center">
         <p className="text-2xl font-bold">{price}</p>
@@ -15,7 +15,7 @@ function PriceCard({ title, price, list }) {
           </li>
         ))}
       </ul>
-      <button className="bg-slate-300 w-4/5 text-sm rounded p-1 text-center hover:bg-slate-600 hover:text-slate-100 active:bg-slate-800 active:text-slate-50 ">
+      <button className="bg-slate-300 w-4/5 text-sm rounded p-1 text-center hover:bg-slate-600 hover:text-slate-100 active:bg-slate-800 active:text-slate-50 mt-auto ">
         Empecemos
       </button>
     </div>
