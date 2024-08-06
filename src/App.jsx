@@ -10,10 +10,10 @@ import Social from "./components/Social";
 function App() {
   return (
     <>
-      <div className="sm:p-10">
-        <Nav />
-        <HeroSection />
-        <Characteristics />
+      <Nav />
+      <HeroSection />
+      <div className="sm:p-10 p-2">
+        <Characteristics className="" />
         <PriceSection />
         <Reviews />
         <LastSubscribeSection />

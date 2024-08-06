@@ -4,13 +4,18 @@ import avatar2 from "../assets/avatar2.png";
 
 function Reviews() {
   return (
-    <div id="reviews" className="flex sm:gap-12 gap-2 mt-12 justify-center">
+    <div
+      id="reviews"
+      // className="flex sm:gap-12 gap-2 mt-12 justify-center"
+      className="flex  gap-4 items-stretch mt-12 flex justify-center self-center content-center"
+    >
       <ReviewCard
         title="Excelente sistema"
         review="Este POS ha mejorado significativamente la eficiencia de nuestro restaurante. Muy fácil de usar y con un soporte técnico excelente."
         user="Carlos Mendoza"
         date="25-07-2024"
         profilePic={avatar1}
+        className="items-stretch"
       />
       <ReviewCard
         title="Muy Recomendable"
@@ -18,6 +23,7 @@ function Reviews() {
         user="Ana Rodríguez"
         date="20-07-2024"
         profilePic={avatar2}
+        className="items-stretch"
       />
     </div>
   );
