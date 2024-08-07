@@ -1,3 +1,5 @@
+import EmpecemosBtn from "./EmpecemosBtn";
+
 function PriceCard({ title, price, list }) {
   // const [isMonthly, setIsMonthly] = useState(true);
   console.log("Rendering PriceCard with title:", title, price, list);
@@ -8,16 +10,18 @@ function PriceCard({ title, price, list }) {
         <p className="text-2xl font-bold">{price}</p>
         <span className="text-sm">/mes</span>
       </div>
-      <ul className="mb-12">
+      {/* had to use flex-grow to push the button */}
+      <ul className="mb-12 flex-grow">
         {list.map((item, index) => (
-          <li key={index} className="font-thin sm:text-xs text-xs  text-left">
+          <li key={index} className=" sm:text-xs text-xs  text-left">
             &#8226; {item}
           </li>
         ))}
       </ul>
-      <button className="bg-slate-300 w-4/5 text-sm rounded p-1 text-center hover:bg-slate-600 hover:text-slate-100 active:bg-slate-800 active:text-slate-50 mt-auto ">
+      <EmpecemosBtn className="text-center mt-auto" />
+      {/* <button className="bg-slate-300 w-4/5 text-sm rounded p-1  hover:bg-slate-600 hover:text-slate-100 active:bg-slate-800 active:text-slate-50 text-center mt-auto ">
         Empecemos
-      </button>
+      </button> */}
     </div>
   );
 }

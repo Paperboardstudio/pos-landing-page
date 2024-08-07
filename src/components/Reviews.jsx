@@ -7,7 +7,8 @@ function Reviews() {
     <div
       id="reviews"
       // className="flex sm:gap-12 gap-2 mt-12 justify-center"
-      className="flex  gap-4 items-stretch mt-12 flex justify-center self-center content-center"
+      // className="flex  gap-4  mt-12 justify-center self-center content-center "
+      className="grid grid-cols-2 gap-2 items-stretch mt-12"
     >
       <ReviewCard
         title="Excelente sistema"

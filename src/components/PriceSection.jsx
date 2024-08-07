@@ -16,16 +16,24 @@ function PriceSection() {
       className="w-full mt-16 flex justify-center flex-col items-center self-center content-center"
     >
       <div className="w-full ">
-        <div className="flex gap-6 justify-center mb-12">
+        <div className="flex gap-4 justify-center mb-12">
           <button
             onClick={changeToIsMonthly}
-            className={isMonthly === true && "bg-slate-300 rounded p-1"}
+            className={
+              isMonthly === true
+                ? "bg-slate-900 rounded p-1 text-white"
+                : "bg-slate-400 rounded p-1 text-slate-100"
+            }
           >
             Mensual
           </button>
           <button
             onClick={changeToIsNotMonthly}
-            className={isMonthly === false && "bg-slate-300 rounded p-1"}
+            className={
+              isMonthly === false
+                ? "bg-slate-900 rounded p-1 text-white"
+                : "bg-slate-400 rounded p-1 text-slate-100"
+            }
           >
             Anual
           </button>

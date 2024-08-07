@@ -31,7 +31,7 @@ function HeroSection() {
           <EmpecemosBtn />
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-12 mt-20 w-full">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-12 mt-20 w-full p-10">
         <img
           src={cap1}
           className="w-full h-64 hover:scale-110 transition duration-300 rounded"

@@ -17,7 +17,7 @@ function ReviewCard({ title, review, user, date, profilePic }) {
   );
 
   return (
-    <div className=" border border-slate-200 p-6  ">
+    <div className="border border-slate-200 p-6 flex flex-col h-full flex-grow">
       <div className="flex mb-4">
         {svg}
         {svg}
@@ -25,11 +25,10 @@ function ReviewCard({ title, review, user, date, profilePic }) {
         {svg}
         {svg}
       </div>
-
-      <p className="text-lg text-left font-bold">{title}</p>
+      <p className="text-lg text-left font-bold flex-grow">{title}</p>
       <p className="text-left text-xs flex-grow">{review}</p>
-      <div className="flex mt-6 items-center">
-        <img className="w-8 rounded" src={profilePic} alt="pic" />
+      <div className="flex items-center mt-6 flex-grow">
+        <img className="w-8 rounded mr-2" src={profilePic} alt="User Profile" />
         <div className="">
           <p className="text-xs font-normal">{user}</p>
           <p className="text-xs font-light">{date}</p>

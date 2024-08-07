@@ -3,7 +3,7 @@ import CharacteristicsCard from "./CharacteristicsCard";
 function Characteristics() {
   return (
     <div id="characteristics">
-      <p className="text-gray-600 text-lg flex flex-initial">
+      <p className="text-gray-700 text-xl flex flex-initial font-bold  ">
         Características Principales
       </p>
       <p className="text-gray-400 flex flex-initial">
