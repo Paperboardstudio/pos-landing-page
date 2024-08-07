@@ -43,7 +43,7 @@ function PriceSection() {
         {isMonthly ? (
           <div className="flex gap-2 sm:gap-8 justify-center">
             <PriceCard
-              title="Basico"
+              title="Básico"
               price="$25"
               list={[
                 "Gestión básica de inventarios",

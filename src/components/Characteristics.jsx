@@ -7,13 +7,13 @@ function Characteristics() {
         Características Principales
       </p>
       <p className="text-gray-400 flex flex-initial">
-        Descubre como Clarita puede transformar tu negocio
+        Descubre cómo Claritapp puede transformar tu negocio
       </p>
       {/* gri for the characteristics */}
       <div className="grid sm:grid-cols-3">
         <CharacteristicsCard
-          title="Manejo de Caja"
-          description="Facilita la administracion de tu personal con herramientas integradas para la gestión del personal. Ahorra tiempo y reduce errores operativos."
+          title="Manejo de caja"
+          description="Facilita la administración de tu personal con herramientas integradas que ahorran tiempo y reducen errores operativos."
         />
         <CharacteristicsCard
           title="Gestión de productos"
@@ -21,7 +21,7 @@ function Characteristics() {
         />
         <CharacteristicsCard
           title="Ventas y reportes"
-          description="Realiza un seguimiento en tiempo real de las ventas y accede a informes completos y funcionalidades de análisis que te ayudarán a tomar decisiones informadas."
+          description="Realiza un seguimiento en tiempo real de las ventas y accede a informes completos que te ayudarán a tomar decisiones informadas."
         />
         <CharacteristicsCard
           title="Interfaz amigable"
@@ -33,7 +33,7 @@ function Characteristics() {
         />
         <CharacteristicsCard
           title="Integración con sistemas existentes"
-          description="Conecta fácilmente Clarita con tus sistemas actuales para una oepración sin interrupciones."
+          description="Conecta fácilmente Claritapp con tus sistemas actuales para una operación sin interrupciones."
         />
       </div>
     </div>
