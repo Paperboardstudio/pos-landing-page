@@ -20,25 +20,25 @@ function HeroSection() {
        
         "
       >
-        <div className="content flex flex-col justify-items-center items-center w-full">
-          <h1 className="text-4xl sm:w-3/5 mb-4 font-medium ">
+        <div className="content flex flex-col justify-items-center items-center w-full h-ful py-6">
+          <h1 className="py-4 text-3xl sm:text-6xl sm:w-4/5 mb-4 font-medium ">
             Revoluciona el control de tu negocio
           </h1>
-          <h2 className="text-xl sm:w-3/5 mb-6">
+          <h2 className="sm:text-2xl text-xl sm:w-3/5 mb-8">
             Operaciones optimizadas, transacciones fluidas y análisis en tiempo
             real
           </h2>
           <EmpecemosBtn />
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-12 mt-20 w-full p-10">
+      <div className="grid sm:grid-cols-2 grid-cols-1 gap-12 m-auto mt-20 w-full p-10 place-items-center">
         <img
           src={cap1}
-          className="w-full h-64 hover:scale-110 transition duration-300 rounded"
+          className="sm:w-4/5 w-full sm:h-80 h-64 hover:scale-110 transition duration-300 rounded"
         ></img>
         <img
           src={cap2}
-          className="w-full h-64 hover:scale-110 transition duration-300 rounded"
+          className="sm:w-4/5 w-full sm:h-80 h-64 hover:scale-110 transition duration-300 rounded"
         ></img>
       </div>
     </div>
