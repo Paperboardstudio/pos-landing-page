@@ -4,7 +4,7 @@ function PriceCard({ title, price, list }) {
   // const [isMonthly, setIsMonthly] = useState(true);
   console.log("Rendering PriceCard with title:", title, price, list);
   return (
-    <div className="border border-slate-300 sm:p-8 p-2 sm:pr-20 mb-4 flex flex-col h-full items-center">
+    <div className="border border-slate-300 sm:p-8 p-2 mb-4 flex flex-col h-full items-center">
       <p className="font-medium sm:text-base text-sm">{title}</p>
       <div className="flex text-center items-center justify-center">
         <p className="text-2xl font-bold">{price}</p>

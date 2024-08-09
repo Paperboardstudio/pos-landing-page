@@ -13,10 +13,10 @@ function PriceSection() {
   return (
     <div
       id="price"
-      className="w-full mt-16 flex justify-center flex-col items-center self-center content-center"
+      className="w-full mt-16 flex flex-col justify-center  items-center self-center content-center"
     >
       <div className="w-full ">
-        <div className="flex gap-2 sm:gap-4 justify-center mb-12">
+        <div className="grid gap-2 sm:gap-8 justify-center mb-12">
           <button
             onClick={changeToIsMonthly}
             className={

@@ -14,8 +14,10 @@ function App() {
       <HeroSection />
       <div className="sm:p-10 p-2">
         <Characteristics className="" />
+
         <PriceSection />
         <Reviews />
+
         <LastSubscribeSection />
         <Social />
       </div>
