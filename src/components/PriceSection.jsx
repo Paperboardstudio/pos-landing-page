@@ -13,10 +13,10 @@ function PriceSection() {
   return (
     <div
       id="price"
-      className="w-full mt-16 flex flex-col justify-center  items-center self-center content-center"
+      className="w-full mt-16 grid  justify-center  items-center self-center content-center"
     >
-      <div className="w-full ">
-        <div className="grid gap-2 sm:gap-8 justify-center mb-12">
+      <div className="w-full flex justify-center items-center ">
+        <div className="flex gap-2 sm:gap-8 justify-center mb-12">
           <button
             onClick={changeToIsMonthly}
             className={
@@ -39,60 +39,62 @@ function PriceSection() {
           </button>
         </div>
       </div>
-      <div className="w-full flex justify-center">
-        {isMonthly ? (
-          <div className="flex gap-2 sm:gap-8 justify-center">
-            <PriceCard
-              title="Básico"
-              price="$25"
-              list={[
-                "Gestión básica de inventarios",
-                "Reporte de ventas diarios",
-                "Soporte técnico estándar",
-                "Acceso a actualizaciones de software",
-                "Administrador y caja",
-              ]}
-            />
-            <PriceCard
-              title="Pro"
-              price="$75"
-              list={[
-                "Todas las características del Plan Básico",
-                "Reportes de ventas avanzados",
-                "Soporte técnico prioritario",
-                "Integraciones con otros sistemas",
-                "Administrador, caja, mesero y cocina",
-              ]}
-            />
-          </div>
-        ) : (
-          <div className="flex gap-8 justify-center">
-            <PriceCard
-              title="Basico Anual"
-              price="$19"
-              list={[
-                "Facturado una vez al año",
-                "Gestión básica de inventarios",
-                "Reporte de ventas diarios",
-                "Soporte técnico estándar",
-                "Acceso a actualizaciones de software",
-                "Administrador y caja",
-              ]}
-            />
-            <PriceCard
-              title="Pro Anual"
-              price="$59"
-              list={[
-                "Facturado una vez al año",
-                "Todas las características del Plan Básico",
-                "Reportes de ventas avanzados",
-                "Soporte técnico prioritario",
-                "Integraciones con otros sistemas",
-                "Administrador, caja, mesero y cocina",
-              ]}
-            />
-          </div>
-        )}
+      <div className="grid">
+        <div className="w-full grid justify-center">
+          {isMonthly ? (
+            <div className="flex gap-2 sm:gap-8 justify-center">
+              <PriceCard
+                title="Básico"
+                price="$25"
+                list={[
+                  "Gestión básica de inventarios",
+                  "Reporte de ventas diarios",
+                  "Soporte técnico estándar",
+                  "Acceso a actualizaciones de software",
+                  "Administrador y caja",
+                ]}
+              />
+              <PriceCard
+                title="Pro"
+                price="$75"
+                list={[
+                  "Todas las características del Plan Básico",
+                  "Reportes de ventas avanzados",
+                  "Soporte técnico prioritario",
+                  "Integraciones con otros sistemas",
+                  "Administrador, caja, mesero y cocina",
+                ]}
+              />
+            </div>
+          ) : (
+            <div className="flex gap-8 justify-center">
+              <PriceCard
+                title="Basico Anual"
+                price="$19"
+                list={[
+                  "Facturado una vez al año",
+                  "Gestión básica de inventarios",
+                  "Reporte de ventas diarios",
+                  "Soporte técnico estándar",
+                  "Acceso a actualizaciones de software",
+                  "Administrador y caja",
+                ]}
+              />
+              <PriceCard
+                title="Pro Anual"
+                price="$59"
+                list={[
+                  "Facturado una vez al año",
+                  "Todas las características del Plan Básico",
+                  "Reportes de ventas avanzados",
+                  "Soporte técnico prioritario",
+                  "Integraciones con otros sistemas",
+                  "Administrador, caja, mesero y cocina",
+                ]}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ function App() {
     <>
       <Nav />
       <HeroSection />
-      <div className="sm:p-10 p-2">
+      <div className="sm:p-10 p-2 grid items-center justify-center box-border w-full">
         <Characteristics className="" />
 
         <PriceSection />

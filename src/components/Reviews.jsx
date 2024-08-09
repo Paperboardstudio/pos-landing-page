@@ -8,7 +8,7 @@ function Reviews() {
       id="reviews"
       // className="flex sm:gap-12 gap-2 mt-12 justify-center"
       // className="flex  gap-4  mt-12 justify-center self-center content-center "
-      className="grid grid-cols-2 gap-2 sm:gap-8 justify-center mt-12 items-center"
+      className="grid grid-cols-2 gap-2 sm:gap-8 justify-center mt-12 items-center w-full box-border"
     >
       <ReviewCard
         title="Excelente sistema"
