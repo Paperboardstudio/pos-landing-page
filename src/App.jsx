@@ -1,5 +1,6 @@
 import "./App.css";
 import Characteristics from "./components/Characteristics";
+import Contact from "./components/Contact";
 import HeroSection from "./components/HeroSection";
 import LastSubscribeSection from "./components/LastSubscribeSection";
 import Nav from "./components/Nav";
@@ -19,7 +20,8 @@ function App() {
         <Reviews />
 
         <LastSubscribeSection />
-        <Social />
+        {/* <Social /> */}
+        <Contact />
       </div>
     </>
   );

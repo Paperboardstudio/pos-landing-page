@@ -67,7 +67,7 @@ function PriceSection() {
               />
             </div>
           ) : (
-            <div className="flex gap-8 justify-center">
+            <div className="flex gap-2 sm:gap-8 justify-center">
               <PriceCard
                 title="Basico Anual"
                 price="$19"

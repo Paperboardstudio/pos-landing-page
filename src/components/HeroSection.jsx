@@ -8,7 +8,7 @@ import EmpecemosBtn from "./EmpecemosBtn";
 function HeroSection() {
   return (
     <div
-      className="flex flex-col justify-items-center items-center mt-20 mb-20
+      className="flex flex-col justify-items-center items-center sm:mt-20 mb-20
     
 	
     "
