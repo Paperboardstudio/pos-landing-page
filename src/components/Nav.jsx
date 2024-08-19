@@ -12,7 +12,7 @@ function Nav() {
       <div className="left-side flex items-center ml-2">
         <img
           src={logo1}
-          className="sm:w-32 w-14  flex align-middle justify-center"
+          className="sm:w-36 w-14  flex align-middle justify-center"
         ></img>
       </div>
       <div className="right-side flex justify-end text-sm sm:text-lg">
