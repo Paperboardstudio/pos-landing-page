@@ -9,7 +9,7 @@ import Nav from "./components/Nav";
 import PriceSection from "./components/PriceSection";
 import Reviews from "./components/Reviews";
 import Social from "./components/Social";
-import CheckoutPage from "./components/CheckoutPage";
+import CheckoutPage from "./components/checkout/CheckoutPage";
 
 const router = createBrowserRouter([
   {
