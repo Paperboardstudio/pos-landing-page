@@ -64,6 +64,7 @@ packages/react-devtools-timeline/dist
 .env.local
 .env.*.local
 */.env
+.env
 
 # ESLint cache
 .eslintcache
