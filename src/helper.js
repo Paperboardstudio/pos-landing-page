@@ -5,8 +5,8 @@ export async function fetchFromAPI(endpoint, opts) {
 
   const res = await fetch(`${API}/${endpoint}`, {
     method,
-    ...fetch(body && { body: JSON.stringify(body)},
-  headers: {'Content-Type':'application/json'}),
+    ...(body && { body: JSON.stringify(body) }),
+    headers: { "Content-Type": "application/json" },
   });
   return res.json();
 }
