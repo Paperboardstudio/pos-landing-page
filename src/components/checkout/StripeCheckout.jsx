@@ -26,6 +26,7 @@ function StripeCheckout() {
     const response = await fetchFromAPI("create-checkout-session", {
       body: { line_items, customer_email: email },
     });
+
     const { sessionId } = response;
     const { error } = await stripe.redirectToCheckout({ sessionId });
 
