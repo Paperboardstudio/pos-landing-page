@@ -25,6 +25,7 @@ async function createCheckoutSession(req, res) {
       cancel_url: `${domainUrl}/canceled`,
       shipping_address_collection: { allowed_countries: ["US", "EC", "CA"] },
     });
+    console.log("session: ", session.id);
     res.status(200).json({ sessionId: session.id });
   } catch (error) {
     console.log(error);

@@ -11,6 +11,7 @@ function StripeCheckout() {
     e.preventDefault();
     // i have to update this with the product
     const line_items = cartItems.map((item) => {
+      console.log("items:", item);
       return {
         quantity: item.quantity,
         price_data: {
