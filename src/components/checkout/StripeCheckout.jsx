@@ -1,28 +1,29 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useStripe } from "@stripe/react-stripe-js";
+import { CartContext } from "../../components/context/cart-context";
 import { fetchFromAPI } from "../../helper";
 
 function StripeCheckout() {
   const [email, setEmail] = useState("");
+  const { cartItems } = useContext(CartContext);
   const stripe = useStripe();
   const handleGuestCheckout = async (e) => {
     e.preventDefault();
     // i have to update this with the product
-    const line_items = [
-      {
-        quantity: 1,
+    const line_items = cartItems.map((item) => {
+      return {
+        quantity: item.quantity,
         price_data: {
           currency: "usd",
-
-          unit_amount: 35 * 100, //amount is in cents which is why has to be multitplied. I am not sure about this aprt so i need to test
+          unit_amount: item.price * 100, // amount is in cents
           product_data: {
-            name: "asd", //item title
-            description: "just a test product", //replace this alter
-            // images: [itemimage]`
+            name: item.title,
+            description: item.description,
+            images: [item.imageUrl],
           },
         },
-      },
-    ];
+      };
+    });
     const response = await fetchFromAPI("create-checkout-session", {
       body: { line_items, customer_email: email },
     });

@@ -12,6 +12,7 @@ import Social from "./components/Social";
 import CheckoutPage from "./components/checkout/CheckoutPage";
 import Success from "./components/checkout/Success";
 import Canceled from "./components/checkout/Canceled";
+import CartContextProvider from "./components/context/cart-context";
 
 const router = createBrowserRouter([
   {
@@ -34,10 +35,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
+    <CartContextProvider>
       <RouterProvider router={router} />
       {/* <Homepage /> */}
-    </>
+    </CartContextProvider>
   );
 }
 

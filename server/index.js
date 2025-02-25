@@ -10,13 +10,13 @@ const app = express();
 const port = 8080;
 
 //middleware
-app.use(cors());
-app.use(cors({ origin: true }));
+// app.use(cors());
 app.use(
   express.json({
     verify: (req, res, buffer) => (req["rawBody"] = buffer),
   })
 );
+app.use(cors({ origin: true }));
 // app.use(bodyParser.json());
 
 //Routes
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 app.post("/create-checkout-session", createCheckoutSession);
 
-app.post("create-payment-intent", paymentIntent);
+app.post("/create-payment-intent", paymentIntent);
 
 app.post("/webhook", webhook);
 
