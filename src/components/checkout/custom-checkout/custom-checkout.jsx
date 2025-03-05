@@ -85,17 +85,17 @@ function CustomCheckout({ shipping, cartItems }) {
   };
 
   return (
-    <div>
+    <div className="flex flex-col gap-4 md:w-1/4 mx-auto">
       <h4>Enter Payment Details</h4>
-      <div className="stripe-card">
+      <div className="stripe-card ">
         <CardNumberElement
-          className="card-element"
+          className="card-element border border-gray-800 px-1"
           options={cardStyle}
           onChange={cardHandleChange}
         />
       </div>
 
-      <div className="stripe-card">
+      <div className="stripe-card border border-gray-800 px-1">
         <CardExpiryElement
           className="card-element"
           options={cardStyle}
@@ -103,7 +103,7 @@ function CustomCheckout({ shipping, cartItems }) {
         />
       </div>
 
-      <div className="stripe-card">
+      <div className="stripe-card border border-gray-800 px-1">
         <CardCvcElement
           className="card-element"
           options={cardStyle}
@@ -114,7 +114,7 @@ function CustomCheckout({ shipping, cartItems }) {
       <div className="submit-btn">
         <button
           disabled={processing}
-          className="button is-black nomad-btn submit"
+          className="button is-black nomad-btn submit p-2 px-8 rounded-md bg-slate-700 text-slate-100"
           onClick={() => handleCheckout()}
         >
           {processing ? "PROCESSING" : "PAY"}
