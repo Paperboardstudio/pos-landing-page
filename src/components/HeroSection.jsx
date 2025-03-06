@@ -3,7 +3,7 @@ import banner from "../assets/bannerclarita.jpg";
 import cap1 from "../assets/cap1.png";
 import cap2 from "../assets/cap2.png";
 import "./HeroSection.css";
-import EmpecemosBtn from "./EmpecemosBtn";
+import GoToPricesBtn from "./GoToPricesBtn";
 
 function HeroSection() {
   return (
@@ -28,7 +28,7 @@ function HeroSection() {
             Operaciones optimizadas, transacciones fluidas y análisis en tiempo
             real
           </h2>
-          <EmpecemosBtn />
+          <GoToPricesBtn />
         </div>
       </div>
       <div className="grid sm:grid-cols-2 grid-cols-1 gap-12 m-auto mt-20 w-full p-10 place-items-center">

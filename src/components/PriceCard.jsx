@@ -2,7 +2,7 @@ import EmpecemosBtn from "./EmpecemosBtn";
 
 function PriceCard({ title, price, list }) {
   // const [isMonthly, setIsMonthly] = useState(true);
-  console.log("Rendering PriceCard with title:", title, price, list);
+  // console.log("Rendering PriceCard with title:", title, price, list);
   return (
     <div className="border border-slate-300 sm:p-8 p-2 mb-4 flex flex-col h-full items-center w-full box-border">
       <p className="font-medium sm:text-base text-sm">{title}</p>
@@ -18,7 +18,11 @@ function PriceCard({ title, price, list }) {
           </li>
         ))}
       </ul>
-      <EmpecemosBtn className="text-center mt-auto" />
+      <EmpecemosBtn
+        title={title}
+        price={price}
+        className="text-center mt-auto"
+      />
       {/* <button className="bg-slate-300 w-4/5 text-sm rounded p-1  hover:bg-slate-600 hover:text-slate-100 active:bg-slate-800 active:text-slate-50 text-center mt-auto ">
         Empecemos
       </button> */}

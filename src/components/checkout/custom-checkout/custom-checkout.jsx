@@ -20,6 +20,10 @@ function CustomCheckout({ shipping, cartItems }) {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (!cartItems || cartItems.length === 0) {
+      console.error("Cart is empty, skipping payment intent creation."); // Debugging log
+      return;
+    }
     const items = cartItems.map((item) => ({
       price: item.price,
       quantity: item.quantity,
@@ -36,6 +40,7 @@ function CustomCheckout({ shipping, cartItems }) {
       };
 
       const customCheckout = async () => {
+        console.log("Sending request to create-payment-intent:", body); //debug
         const { clientSecret } = await fetchFromAPI("create-payment-intent", {
           body,
         });
