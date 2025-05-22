@@ -13,6 +13,8 @@ import CheckoutPage from "./components/checkout/CheckoutPage";
 import Success from "./components/checkout/Success";
 import Canceled from "./components/checkout/Canceled";
 import CartContextProvider from "./components/context/cart-context";
+import SignUp from "./components/sign-up/sign-up";
+import SignIn from "./components/sign-in/sign-in";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,8 @@ const router = createBrowserRouter([
     path: "/canceled",
     element: <Canceled />,
   },
+  { path: "/sign-up", element: <SignUp /> },
+  { path: "/sign-in", element: <SignIn /> },
 ]);
 
 function App() {
