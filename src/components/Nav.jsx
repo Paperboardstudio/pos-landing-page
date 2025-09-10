@@ -1,6 +1,6 @@
 import imgPlaceholder from "../assets/imgPlaceholder.png";
 import logo1 from "../assets/claritapplogo_black.png";
-import EmpecemosBtn from "./EmpecemosBtn";
+import GoToPricesBtn from "./GoToPricesBtn";
 
 function Nav() {
   function locate(section) {
@@ -36,7 +36,7 @@ function Nav() {
             Comunidad
           </li>
           <li className="flex ">
-            <EmpecemosBtn />
+            <GoToPricesBtn />
           </li>
         </ul>
       </div>

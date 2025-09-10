@@ -3,6 +3,7 @@
 
 # Node modules
 node_modules/
+*/node_modules
 
 # Flow files
 scripts/flow/*/.flowconfig
@@ -62,6 +63,8 @@ packages/react-devtools-timeline/dist
 # Environment files
 .env.local
 .env.*.local
+*/.env
+.env
 
 # ESLint cache
 .eslintcache
